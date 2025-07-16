@@ -67,7 +67,7 @@ export default function App() {
         setIconCode(res.weather[0].icon);
         setWeatherIcon(getWeatherIcon(res.weather[0].main, res.weather[0].icon));
       } else {
-        setError('City not found');
+        setError('City not found...');
       }
     } catch (e) {
       setError('Error fetching weather');
